@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7257A95B4BBC1F2B14D9B9D /* Pods_InstagramMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB436CC64C0B9F1BC2D1F02 /* Pods_InstagramMe.framework */; };
 		D0AB13742AD2922B00AEC281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13732AD2922B00AEC281 /* AppDelegate.swift */; };
 		D0AB13762AD2922B00AEC281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13752AD2922B00AEC281 /* SceneDelegate.swift */; };
 		D0AB13782AD2922B00AEC281 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13772AD2922B00AEC281 /* HomeViewController.swift */; };
@@ -27,9 +28,16 @@
 		D0AB13A82AD2968800AEC281 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13A72AD2968800AEC281 /* SearchResultViewController.swift */; };
 		D0AB13AA2AD296A100AEC281 /* PostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13A92AD296A100AEC281 /* PostEditViewController.swift */; };
 		D0AB13AC2AD296D400AEC281 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB13AB2AD296D400AEC281 /* PublishPostViewController.swift */; };
+		D0E1E4B12AD4138800D6D9E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0E1E4B02AD4138800D6D9E9 /* GoogleService-Info.plist */; };
+		D0E1E4B42AD4188A00D6D9E9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1E4B32AD4188A00D6D9E9 /* DatabaseManager.swift */; };
+		D0E1E4B62AD41A2000D6D9E9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1E4B52AD41A2000D6D9E9 /* AuthManager.swift */; };
+		D0E1E4B82AD41A7200D6D9E9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1E4B72AD41A7200D6D9E9 /* StorageManager.swift */; };
+		D0E1E4BA2AD4318800D6D9E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1E4B92AD4318800D6D9E9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7831FFFAC6CE2C90C1512A17 /* Pods-InstagramMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramMe.release.xcconfig"; path = "Target Support Files/Pods-InstagramMe/Pods-InstagramMe.release.xcconfig"; sourceTree = "<group>"; };
+		89FCE73613672D69714D6DD9 /* Pods-InstagramMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramMe.debug.xcconfig"; path = "Target Support Files/Pods-InstagramMe/Pods-InstagramMe.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AB13702AD2922B00AEC281 /* InstagramMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AB13732AD2922B00AEC281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0AB13752AD2922B00AEC281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +60,12 @@
 		D0AB13A72AD2968800AEC281 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		D0AB13A92AD296A100AEC281 /* PostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditViewController.swift; sourceTree = "<group>"; };
 		D0AB13AB2AD296D400AEC281 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		D0E1E4B02AD4138800D6D9E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0E1E4B32AD4188A00D6D9E9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D0E1E4B52AD41A2000D6D9E9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D0E1E4B72AD41A7200D6D9E9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D0E1E4B92AD4318800D6D9E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ECB436CC64C0B9F1BC2D1F02 /* Pods_InstagramMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7257A95B4BBC1F2B14D9B9D /* Pods_InstagramMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51FEF492159FED2F8B0CF79C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB436CC64C0B9F1BC2D1F02 /* Pods_InstagramMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0AB13672AD2922B00AEC281 = {
 			isa = PBXGroup;
 			children = (
 				D0AB13722AD2922B00AEC281 /* InstagramMe */,
 				D0AB13712AD2922B00AEC281 /* Products */,
+				F796BC5D07519279BD4B013B /* Pods */,
+				51FEF492159FED2F8B0CF79C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +146,13 @@
 		D0AB138A2AD292C400AEC281 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0E1E4B02AD4138800D6D9E9 /* GoogleService-Info.plist */,
 				D0AB13732AD2922B00AEC281 /* AppDelegate.swift */,
 				D0AB13752AD2922B00AEC281 /* SceneDelegate.swift */,
+				D0E1E4B32AD4188A00D6D9E9 /* DatabaseManager.swift */,
+				D0E1E4B52AD41A2000D6D9E9 /* AuthManager.swift */,
+				D0E1E4B72AD41A7200D6D9E9 /* StorageManager.swift */,
+				D0E1E4B92AD4318800D6D9E9 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,14 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				D0AB13982AD2954000AEC281 /* Onboarding */,
-				D0AB139D2AD295BA00AEC281 /* PostViewController.swift */,
-				D0AB139F2AD295D200AEC281 /* EditProfileViewController.swift */,
-				D0AB13A12AD295F200AEC281 /* SettingsViewController.swift */,
-				D0AB13A32AD2961B00AEC281 /* ListViewController.swift */,
-				D0AB13A52AD2966F00AEC281 /* SearchViewController.swift */,
-				D0AB13A72AD2968800AEC281 /* SearchResultViewController.swift */,
-				D0AB13A92AD296A100AEC281 /* PostEditViewController.swift */,
-				D0AB13AB2AD296D400AEC281 /* PublishPostViewController.swift */,
+				D0E1E4B22AD417B500D6D9E9 /* General */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -173,6 +196,30 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D0E1E4B22AD417B500D6D9E9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB139D2AD295BA00AEC281 /* PostViewController.swift */,
+				D0AB139F2AD295D200AEC281 /* EditProfileViewController.swift */,
+				D0AB13A12AD295F200AEC281 /* SettingsViewController.swift */,
+				D0AB13A32AD2961B00AEC281 /* ListViewController.swift */,
+				D0AB13A52AD2966F00AEC281 /* SearchViewController.swift */,
+				D0AB13A72AD2968800AEC281 /* SearchResultViewController.swift */,
+				D0AB13A92AD296A100AEC281 /* PostEditViewController.swift */,
+				D0AB13AB2AD296D400AEC281 /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F796BC5D07519279BD4B013B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FCE73613672D69714D6DD9 /* Pods-InstagramMe.debug.xcconfig */,
+				7831FFFAC6CE2C90C1512A17 /* Pods-InstagramMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0AB13842AD2922D00AEC281 /* Build configuration list for PBXNativeTarget "InstagramMe" */;
 			buildPhases = (
+				5D9679776D8C1FCD7BA2B0AF /* [CP] Check Pods Manifest.lock */,
 				D0AB136C2AD2922B00AEC281 /* Sources */,
 				D0AB136D2AD2922B00AEC281 /* Frameworks */,
 				D0AB136E2AD2922B00AEC281 /* Resources */,
+				18B4B09AF696A7299E5C4063 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,10 +283,53 @@
 				D0AB13802AD2922D00AEC281 /* LaunchScreen.storyboard in Resources */,
 				D0AB137D2AD2922D00AEC281 /* Assets.xcassets in Resources */,
 				D0AB137B2AD2922B00AEC281 /* Main.storyboard in Resources */,
+				D0E1E4B12AD4138800D6D9E9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B4B09AF696A7299E5C4063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramMe/Pods-InstagramMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramMe/Pods-InstagramMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagramMe/Pods-InstagramMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9679776D8C1FCD7BA2B0AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstagramMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0AB136C2AD2922B00AEC281 /* Sources */ = {
@@ -251,12 +343,16 @@
 				D0AB13912AD2944600AEC281 /* CameraViewController.swift in Sources */,
 				D0AB139C2AD2957400AEC281 /* RegistirationViewController.swift in Sources */,
 				D0AB13782AD2922B00AEC281 /* HomeViewController.swift in Sources */,
+				D0E1E4B82AD41A7200D6D9E9 /* StorageManager.swift in Sources */,
 				D0AB139E2AD295BA00AEC281 /* PostViewController.swift in Sources */,
+				D0E1E4B42AD4188A00D6D9E9 /* DatabaseManager.swift in Sources */,
 				D0AB13932AD2948000AEC281 /* NotificationsViewController.swift in Sources */,
 				D0AB13A82AD2968800AEC281 /* SearchResultViewController.swift in Sources */,
 				D0AB139A2AD2955900AEC281 /* LoginViewController.swift in Sources */,
+				D0E1E4BA2AD4318800D6D9E9 /* Extensions.swift in Sources */,
 				D0AB13A62AD2966F00AEC281 /* SearchViewController.swift in Sources */,
 				D0AB13952AD2949E00AEC281 /* ProfileViewController.swift in Sources */,
+				D0E1E4B62AD41A2000D6D9E9 /* AuthManager.swift in Sources */,
 				D0AB13742AD2922B00AEC281 /* AppDelegate.swift in Sources */,
 				D0AB13762AD2922B00AEC281 /* SceneDelegate.swift in Sources */,
 				D0AB13A42AD2961B00AEC281 /* ListViewController.swift in Sources */,
@@ -402,6 +498,7 @@
 		};
 		D0AB13852AD2922D00AEC281 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FCE73613672D69714D6DD9 /* Pods-InstagramMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -412,8 +509,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,6 +526,7 @@
 		};
 		D0AB13862AD2922D00AEC281 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7831FFFAC6CE2C90C1512A17 /* Pods-InstagramMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,8 +537,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
