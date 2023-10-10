@@ -164,8 +164,29 @@ class LoginViewController: UIViewController {
             return
         }
         // Login
+        var email: String?
+        var username: String?
+        if usernameEmail.contains("@"), usernameEmail.contains("."){
+            email = usernameEmail
+        }else{
+            username = usernameEmail
+        }
+        AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
+            DispatchQueue.main.async {
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                }else{
+                    let alert = UIAlertController(title: "Log In Error",
+                                                  message: "We were unable to log you in.",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss",
+                                                  style: .cancel,
+                                                  handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
     }
-    
     @objc private func didTapTermsButton() {
         guard let url = URL(string: "https://help.instagram.com/581066165581870")else{
             return
@@ -184,7 +205,8 @@ class LoginViewController: UIViewController {
     
     @objc private func didTapCreateAccountButton() {
         let vc = RegistirationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
 }
 
